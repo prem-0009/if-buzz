@@ -1,9 +1,33 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+// if(getInput.length === 1){
+// if (getInput(0)%3 === 0  && getInput(0)%5 === 0){
+//     console.log("FizzBuzz")
+// }else if (getInput(0)%3 === 0){
+//     console.log('Fizz')
+// }else if (getInput(0)%5 === 0){
+//     console.log("Buzz")
+// } else {
+//     console.log(getInput(0))
+// }
 
-
-
+// // stretch
+if (getInput(0)%getInput(1) === 0 && getInput(0)%getInput(2) === 0){
+  console.log('FizzBuzz')
+} else if (getInput(0) % getInput(1) === 0 ){
+  console.log('Fizz')
+} else if (getInput(0) % getInput(2) === 0 ){
+  console.log('Buzz')
+} else if (getInput(0)%3 === 0  && getInput(0)%5 === 0){
+      console.log("FizzBuzz")
+  }else if (getInput(0)%3 === 0){
+      console.log('Fizz')
+  }else if (getInput(0)%5 === 0){
+      console.log("Buzz")
+  } else {
+      console.log(getInput(0))
+  }
 
 
 /*******************************************************************************

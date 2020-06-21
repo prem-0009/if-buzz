@@ -1,32 +1,69 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+const num = getInput(0);
 
-if (getInput(0)%3 === 0  && getInput(0)%5 === 0){
-    console.log("FizzBuzz")
-}else if (getInput(0)%3 === 0){
-    console.log('Fizz')
-}else if (getInput(0)%5 === 0){
-    console.log("Buzz")
-} else {
-    console.log(getInput(0))
+const isEvenlyDivisibleBy3 = num % 3 === 0;
+const isEvenlyDivisibleBy5 = num % 5 === 0;
+let answer = '';
+if (isEvenlyDivisibleBy3){
+  answer = 'Fizz'
 }
 
-// // stretch
-// if (getInput(0)%getInput(1) === 0 && getInput(0)%getInput(2) === 0){
-//   console.log('FizzBuzz')
-// } else if (getInput(0) % getInput(1) === 0 ){
-//   console.log('Fizz')
-// } else if (getInput(0) % getInput(2) === 0 ){
-//   console.log('Buzz')
-// } else if (getInput(0)%3 === 0  && getInput(0)%5 === 0){
-//       console.log("FizzBuzz")
-//   }else if (getInput(0)%3 === 0){
-//       console.log('Fizz')
-//   }else if (getInput(0)%5 === 0){
-//       console.log("Buzz")
+if (isEvenlyDivisibleBy5){
+  answer = answer + 'Buzz'
+}
+
+if (!isEvenlyDivisibleBy3 && !isEvenlyDivisibleBy5){
+  answer = num;
+}
+console.log(answer);
+
+// if (isEvenlyDivisibleBy3){
+//   if ( isEvenlyDivisibleBy5){
+//     console.log("FizzBuzz")
 //   } else {
-//       console.log(getInput(0))
+//     console.log("Fizz")
+//   }
+// } else if ( isEvenlyDivisibleBy5){
+//   console.log("Buzz")
+// } else {
+//   console.log(num)
+// }
+
+
+// if (isEvenlyDivisibleBy3   && isEvenlyDivisibleBy5 ){
+//     console.log("FizzBuzz")
+// }else if (isEvenlyDivisibleBy3 ){
+//     console.log('Fizz')
+// }else if (isEvenlyDivisibleBy5 ){
+//     console.log("Buzz")
+// } else {
+//     console.log(num)
+// }
+
+// // stretch
+// const firstN = getInput(1);
+// const secondN = getInput(2);
+// const isEvenlyDivisibleBy1st = num % firstN === 0;
+// const isEvenlyDivisibleBy2nd = num % secondN === 0; 
+
+
+
+// if (isEvenlyDivisibleBy1st  && isEvenlyDivisibleBy2nd){
+//   console.log('FizzBuzz')
+// } else if (isEvenlyDivisibleBy1st  ){
+//   console.log('Fizz')
+// } else if (isEvenlyDivisibleBy2nd  ){
+//   console.log('Buzz')
+// } else if (isEvenlyDivisibleBy3  && isEvenlyDivisibleBy5){
+//   console.log("FizzBuzz")
+// }else if (isEvenlyDivisibleBy3){
+//   console.log('Fizz')
+// }else if (isEvenlyDivisibleBy5){
+//   console.log("Buzz")
+// } else {
+//   console.log(num)
 //   }
 
 
